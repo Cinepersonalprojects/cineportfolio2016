@@ -2,30 +2,29 @@
   import { fade } from 'svelte/transition';
 </script>
 
-
-<div class="min-h-screen bg-gradient-to-br from-yellow-100 via-blue-100 to-white font-sans text-gray-800 scroll-smooth">
+<div class="min-h-screen bg-gradient-to-br from-yellow-100 via-blue-100 to-white font-sans text-gray-800 scroll-smooth overflow-x-hidden">
   <div class="max-w-6xl mx-auto px-4 sm:px-6 py-16">
 
     <!-- Hero Section -->
-    <section class="flex flex-col md:flex-row items-center justify-between gap-8">
+    <section class="flex flex-col md:flex-row items-center justify-between gap-8 overflow-hidden">
       <div class="text-center md:text-left" in:fade>
-        <h1 class="text-5xl font-extrabold text-gray-800 mb-4">Francine Chavinda</h1>
-        <h2 class="text-2xl font-bold text-yellow-500 mb-6">Full Stack Systems Developer | Website Developer</h2>
+        <h1 class="text-4xl sm:text-5xl font-extrabold text-gray-800 mb-4">Francine Chavinda</h1>
+        <h2 class="text-xl sm:text-2xl font-bold text-yellow-500 mb-6">Full Stack Systems Developer | Website Developer</h2>
         <div class="flex flex-wrap gap-4 justify-center md:justify-start text-sm text-gray-600">
           <a href="mailto:fechavinda@gmail.com" class="text-lg font-semibold hover:scale-110 transform transition-transform duration-300 text-yellow-500">📧 fechavinda@gmail.com</a>
           <a href="https://www.linkedin.com/in/francine-chavinda-313816299/" class="text-lg font-semibold hover:scale-110 transform transition-transform duration-300 text-blue-600">🔗 LinkedIn</a>
           <a href="https://www.upwork.com/freelancers/~0185cc4e4be17932ef" class="text-lg font-semibold hover:scale-110 transform transition-transform duration-300 text-teal-500">🧑🏽‍💻 Upwork</a>
         </div>
       </div>
-      <div class="w-72 h-72 sm:w-96 sm:h-96 rounded-full overflow-hidden shadow-lg">
-        <img src="images/cinea.jpg" alt="Francine Chavinda" class="object-cover w-fit h-fit" />
+      <div class="w-64 h-64 sm:w-80 sm:h-80 rounded-full overflow-hidden shadow-lg flex-shrink-0">
+        <img src="images/cinea.jpg" alt="Francine Chavinda" class="object-cover w-full h-full" />
       </div>
     </section>
 
     <!-- About Me -->
     <section id="about" class="mt-24 text-center md:text-left">
       <h2 class="text-3xl font-bold mb-6 text-yellow-500">About Me</h2>
-      <p class="text-lg font-medium text-gray-700">
+      <p class="text-lg text-gray-700">
         I’m a passionate System Developer from Malawi with experience in building functional, scalable systems. I specialize in technologies like Golang, JavaScript, TypeScript, Tailwind CSS, and the SvelteKit framework to create seamless and efficient systems. I'm passionate about solving complex challenges with clean, maintainable code. I strive to create software systems that improve everyday life.
       </p>
       <p class="text-lg font-bold text-gray-700 mt-6">
@@ -39,24 +38,23 @@
       <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 text-center">
         <div class="bg-white p-6 rounded-2xl shadow hover:shadow-lg transition">
           <h3 class="text-xl font-semibold text-blue-600">Languages</h3>
-          <p class="text-lg font-medium">Go, JavaScript/TypeScript, SQL</p>
+          <p class="text-lg">Go, JavaScript/TypeScript, SQL</p>
         </div>
         <div class="bg-white p-6 rounded-2xl shadow hover:shadow-lg transition">
           <h3 class="text-xl font-semibold text-teal-500">Frameworks & Libraries</h3>
-          <p class="text-lg font-medium">SvelteKit, Gorilla Mux, GORM</p>
+          <p class="text-lg">SvelteKit, Gorilla Mux, GORM</p>
         </div>
         <div class="bg-white p-6 rounded-2xl shadow hover:shadow-lg transition">
           <h3 class="text-xl font-semibold text-yellow-500">Tools</h3>
-          <p class="text-lg font-medium">Git, Postman, VS Code, MySQL</p>
+          <p class="text-lg">Git, Postman, VS Code, MySQL</p>
         </div>
       </div>
     </section>
 
     <!-- Projects -->
-    <section id="projects" class="mt-24 px-4">
+    <section id="projects" class="mt-24 px-2">
       <h2 class="text-4xl font-extrabold text-center text-yellow-500 mb-10 tracking-wide">Projects</h2>
       <ul class="space-y-8 max-w-3xl mx-auto">
-        <!-- Tilime Honey -->
         <li class="bg-white p-6 border-l-4 border-yellow-400 rounded-lg shadow hover:shadow-md transition">
           <h3 class="text-2xl font-semibold text-teal-700 mb-1">Tilime Honey Estate Produce Website</h3>
           <p class="text-sm text-gray-600 italic mb-2">Tech Stack: SvelteKit (JavaScript & TypeScript), Tailwind CSS</p>
@@ -66,7 +64,7 @@
           </ul>
           <a href="https://tilimehoney.com" target="_blank" class="text-yellow-600 font-medium hover:underline mt-3 inline-block">🌐 tilimehoney.com</a>
         </li>
-        <!-- eNTicket -->
+
         <li class="bg-white p-6 border-l-4 border-yellow-400 rounded-lg shadow hover:shadow-md transition">
           <h3 class="text-2xl font-semibold text-teal-700 mb-1">eNTicket Booking System</h3>
           <p class="text-sm text-gray-600 italic mb-2">Tech Stack: Go, GORM, MySQL, SvelteKit, Tailwind CSS</p>
@@ -75,7 +73,7 @@
           </ul>
           <a href="https://eneticket.com" target="_blank" class="text-yellow-600 font-medium hover:underline mt-3 inline-block">🌐 eneticket.com</a>
         </li>
-        <!-- VRF -->
+
         <li class="bg-white p-6 border-l-4 border-yellow-400 rounded-lg shadow hover:shadow-md transition">
           <h3 class="text-2xl font-semibold text-teal-700 mb-1">Vital Rights Foundation Website</h3>
           <p class="text-sm text-gray-600 italic mb-2">Tech Stack: Wordpress</p>
@@ -120,10 +118,9 @@
       <div class="space-y-4 text-base text-gray-800">
         <p>📧 <span class="font-medium text-xl text-gray-900">Email:</span> <a href="mailto:fechavinda@gmail.com" class="text-yellow-600 font-semibold text-xl hover:underline">fechavinda@gmail.com</a></p>
         <p>🔗 <span class="font-medium text-xl text-gray-900">LinkedIn:</span> <a href="https://www.linkedin.com/in/francine-chavinda-313816299/" target="_blank" class="text-yellow-600 font-semibold text-xl hover:underline">linkedin.com/in/francine-chavinda</a></p>
-        <p>🧑🏽‍💻 <span class="font-medium text-xl text-gray-900">Upwork:</span> <a href="https://www.upwork.com/freelancers/~0185cc4e4be17932ef" target="_blank" class="text-yellow-600 font-semibold text-xl hover:underline">https://www.upwork.com/freelancers/~0185cc4e4be17932ef</a></p>
+        <p>🧑🏽‍💻 <span class="font-medium text-xl text-gray-900">Upwork:</span> <a href="https://www.upwork.com/freelancers/~0185cc4e4be17932ef" target="_blank" class="text-yellow-600 font-semibold text-xl hover:underline">upwork.com/freelancers/~0185cc4e4be17932ef</a></p>
       </div>
     </section>
-
   </div>
 </div>
 
@@ -135,5 +132,6 @@
   :global(body) {
     margin: 0;
     font-family: 'Inter', sans-serif;
+    overflow-x: hidden;
   }
 </style>

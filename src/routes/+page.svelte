@@ -55,15 +55,7 @@
     <section id="projects" class="mt-24 px-2">
       <h2 class="text-4xl font-extrabold text-center text-yellow-500 mb-10 tracking-wide">Projects</h2>
       <ul class="space-y-8 max-w-3xl mx-auto">
-        <li class="bg-white p-6 border-l-4 border-yellow-400 rounded-lg shadow hover:shadow-md transition">
-          <h3 class="text-2xl font-semibold text-teal-700 mb-1">Tilime Honey Estate Produce Website</h3>
-          <p class="text-sm text-gray-600 italic mb-2">Tech Stack: SvelteKit (JavaScript & TypeScript), Tailwind CSS</p>
-          <ul class="list-disc list-inside text-gray-800 text-lg space-y-1">
-            <li>Developed a business website to help boost honey sales through an online presence.</li>
-            <li>Focused on responsive UI, customer appeal, and brand storytelling.</li>
-          </ul>
-          <a href="https://tilimehoney.com" target="_blank" class="text-yellow-600 font-medium hover:underline mt-3 inline-block">🌐 tilimehoney.com</a>
-        </li>
+
 
         <li class="bg-white p-6 border-l-4 border-yellow-400 rounded-lg shadow hover:shadow-md transition">
           <h3 class="text-2xl font-semibold text-teal-700 mb-1">eNTicket Booking System</h3>
